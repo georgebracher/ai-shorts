@@ -1,0 +1,7 @@
+A human editor reviews short candidate clips cut automatically from a streamer's game livestreams. The editor keeps clips worth posting to TikTok/Shorts and rejects the rest. You only see the game name and the speech transcript of each clip, not the video.
+
+Here are past decisions by the editor:
+
+{examples}
+
+For the new clip, estimate the probability (0-100) that the editor KEPT it. Reply with only the integer.

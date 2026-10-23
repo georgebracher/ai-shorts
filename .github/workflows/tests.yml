@@ -1,0 +1,16 @@
+# The fast suite on every push. macOS: the layout tests measure text with Arial Bold and Arial Black,
+# which ship with it (Linux has other builds of them). The end-to-end smoke test needs a whisper
+# backend and macOS say, so it runs on a real machine, not here.
+name: tests
+on: [push, pull_request]
+jobs:
+  fast:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: brew install ffmpeg
+      - run: python -m pip install -e '.[test]'
+      - run: python -m pytest -q --deselect tests/test_smoke.py

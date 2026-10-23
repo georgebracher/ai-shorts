@@ -1,0 +1,10 @@
+.venv/
+out/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+*.egg-info/
+build/
+# a local copy of the word list (README: Word list) is not for committing
+data/

@@ -1,0 +1,32 @@
+[project]
+name = "ai-shorts"
+version = "0.1.0"
+description = "Talking-head recording + script -> finished 1080x1920 short"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "George Bracher"}]
+dependencies = [
+    "pillow>=8.2",                         # textbbox, getlength and rounded_rectangle
+    "pyyaml",
+    "numpy",
+    "opencv-python-headless>=4.10,<5",     # 4.10: first built for numpy 2; 5.x dropped the Haar cascades
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]                       # 7: the pythonpath setting below
+cuda = ["openai-whisper>=20240930"]        # Windows/NVIDIA transcription; 20240930 added the turbo model.
+                                           # Install torch from the CUDA index first (README).
+remote = ["boto3"]                         # footage through Cloudflare R2 for `python -m ai_shorts tower`
+
+[build-system]
+requires = ["setuptools>=77"]  # 77+ reads the SPDX licence string
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["ai_shorts"]
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests"]   # the package and the shared test helpers, without sys.path edits
