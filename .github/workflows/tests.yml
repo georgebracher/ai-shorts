@@ -12,5 +12,5 @@ jobs:
         with:
           python-version: "3.13"
       - run: brew install ffmpeg
-      - run: python -m pip install -e '.[test]'
+      - run: python -m pip install -e '.[test,remote]'
       - run: python -m pytest -q --deselect tests/test_smoke.py

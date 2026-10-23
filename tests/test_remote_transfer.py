@@ -239,6 +239,7 @@ def test_untracked_script_stops_before_the_upload(tmp_path, script, tower):
 
 
 def test_failed_fetch_still_empties_the_bucket(tmp_path, bucket):
+    pytest.importorskip("boto3")   # the R2 route needs the remote extra
     tower = FakeTower(tmp_path / "tower", r2=R2_SET)
     tower.fail_fetch = True
     with pytest.raises(RuntimeError, match="fetch failed"):
@@ -247,6 +248,7 @@ def test_failed_fetch_still_empties_the_bucket(tmp_path, bucket):
 
 
 def test_rotated_r2_key_reaches_the_tower(tmp_path, bucket):
+    pytest.importorskip("boto3")   # the R2 route needs the remote extra
     """The tower already holds a key, the one from before a rotation: it is rewritten (over stdin)
     and its fetch uses the new one."""
     tower = FakeTower(tmp_path / "tower", r2=R2_SET)
