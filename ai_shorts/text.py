@@ -11,6 +11,10 @@ ONES = ("zero one two three four five six seven eight nine ten eleven twelve "
         "thirteen fourteen fifteen sixteen seventeen eighteen nineteen").split()
 TENS = "_ _ twenty thirty forty fifty sixty seventy eighty ninety".split()
 CURRENCY = {"$": "dollars", "£": "pounds", "€": "euros"}
+# Whisper's spellings of what this series says most: 004 (1 Nov 2026), "See who sights you" in his
+# last clean take read as a worse take than an earlier "See who cites you".
+SAME_SOUND = {"sight": "site", "cite": "site", "sights": "sites", "cites": "sites",
+              "sighted": "cited", "sited": "cited"}
 
 
 def number_words(n: int) -> list[str]:
@@ -53,7 +57,7 @@ def normalize_word(raw: str) -> list[str]:
             a, b = part.split(".")
             out += number_words(int(a)) + ["point"] + [ONES[int(d)] for d in b]
         else:
-            out += [p for p in part.split(".") if p]
+            out += [SAME_SOUND.get(p, p) for p in part.split(".") if p]
     return out + suffix
 
 

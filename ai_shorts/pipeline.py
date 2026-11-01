@@ -242,7 +242,7 @@ def _run(videos: list[Path], spec: Spec, cfg: Config, out: Path | None, sheets: 
     words, restarts = apply_alignment(words, spec.words, cfg.max_pause, {s.trigger for s in spec.steps})
     dropped = [w.text for w in sorted(gone + [w for w in words if not w.kept], key=lambda w: w.start)]
     segs = build_segments(words, src.duration, cfg.pad, cfg.max_pause, cfg.fps, silences,
-                          env.quiet)
+                          env.quiet, env.loud)
     if not segs:
         raise RuntimeError("nothing left to keep: no speech matched")
     tmap = TimeMap(segs)

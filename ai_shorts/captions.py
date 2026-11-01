@@ -16,7 +16,7 @@ names and numbers, so two narrow fixes use the script:
            "gets cited.", "My cite" for "My new site"). A real paraphrase ("all" for
            "every") does not sound alike and keeps what he said.
 
-Nothing is ever added that whisper did not hear.
+Nothing is ever added that whisper did not hear, apart from a script sentence's closing stop.
 """
 from dataclasses import replace
 import os
@@ -26,7 +26,7 @@ from difflib import SequenceMatcher
 from functools import lru_cache
 
 from .config import PROJECT_ROOT
-from .text import ONES, TENS, ends_sentence, normalize_word, sound_key, tokens_with_owner
+from .text import ONES, SAME_SOUND, TENS, ends_sentence, normalize_word, sound_key, tokens_with_owner
 from .transcribe import Word
 
 NAME_MATCH = 0.8      # similarity for a heard word to take a script name's spelling
@@ -249,10 +249,10 @@ def numerals(caps: list[Word]) -> list[Word]:
 
 
 def _spoken(text: str) -> str:
-    """Rough spoken form: soft c reads as s, ph as f, ck as k, aw as au, a final silent e
-    and the e of -ed drop ("cited" ~ "sited", "clawed" ~ "Claude")."""
+    """Rough spoken form: soft c reads as s, ph as f, ck as k, aw as au, sh as s, a final silent e
+    and the e of -ed drop ("cited" ~ "sited", "clawed" ~ "Claude", "bosom" ~ "Bosham")."""
     s = re.sub(r"c(?=[eiy])", "s", _letters(text))
-    s = s.replace("ph", "f").replace("ck", "k").replace("aw", "au")
+    s = s.replace("ph", "f").replace("ck", "k").replace("aw", "au").replace("sh", "s")
     s = re.sub(r"ed$", "d", s)
     return re.sub(r"(?<=[^aeiou])e$", "", s)
 
@@ -265,7 +265,9 @@ def fix_misheard(words: list[Word], script_words: list[str]) -> list[Word]:
     for i, w in enumerate(words):        # matched, same letters, other spelling: "clip's" -> "clips"
         if w.script_lo is not None and w.script_lo == w.script_hi:
             core = script_words[stoks[w.script_lo][1]].strip(".,;:!?\"'()")
-            if _letters(core) == _letters(w.text) and core.lower() != w.text.rstrip(".,;:!?").lower() and \
+            toks = normalize_word(core)
+            alike = len(toks) == 1 and toks[0] in SAME_SOUND.values() and toks == normalize_word(w.text)
+            if (alike or _letters(core) == _letters(w.text)) and core.lower() != w.text.rstrip(".,;:!?").lower() and \
                     sum(1 for _, o in stoks if o == stoks[w.script_lo][1]) == 1:
                 out[i] = replace(w, text=core + _trailing_punct(w.text))
     # Each run of unmatched words after a matched one, against the script words up to the next
@@ -327,9 +329,28 @@ def tidy(caps: list[Word]) -> list[Word]:
     return out
 
 
+def script_stops(words: list[Word], script_words: list[str]) -> list[Word]:
+    """Whisper can write a whole take with no full stops. A heard word with no punctuation, lined up
+    with the end of a script sentence and followed by the start of the next one, takes its stop so
+    the caption breaks there: 004 (1 Nov 2026) read "Claude cited it 3 | times ChatGPT,". Not when
+    he ran on ("3 out of 6 times", "...coming and I will"), where the script's stop was never said."""
+    stoks = tokens_with_owner(script_words)
+    out = []
+    for i, w in enumerate(words):
+        if w.script_hi is not None and not _trailing_punct(w.text):
+            owner = stoks[w.script_hi][1]
+            last = w.script_hi + 1 == len(stoks) or stoks[w.script_hi + 1][1] != owner
+            nxt = words[i + 1] if i + 1 < len(words) else None
+            opens = nxt is None or (nxt.script_lo is not None and stoks[nxt.script_lo][1] == owner + 1)
+            if last and opens and ends_sentence(script_words[owner]):
+                w = replace(w, text=w.text + script_words[owner].rstrip("\"')")[-1])
+        out.append(w)
+    return out
+
+
 def caption_words(words: list[Word], script_words: list[str]) -> list[Word]:
     """The words to caption, in time order, on the same timeline as `words`."""
-    caps = fix_misheard(words, script_words)
+    caps = fix_misheard(script_stops(words, script_words), script_words)
     caps = fix_names(caps, script_names(script_words), script_words)
     caps = fix_numbers(caps, script_words)
     return tidy(numerals(caps))

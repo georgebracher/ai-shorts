@@ -79,12 +79,17 @@ class Envelope:
         if len(self.db):
             floor, speech = np.percentile(self.db, 5), np.percentile(self.db, 95)
             self.thr = floor + 0.3 * (speech - floor) if speech - floor >= 15 else -np.inf
+            self.voice = speech - 20       # a breath stays under this, a spoken "s" does not
         else:
-            self.thr = -np.inf
+            self.thr = self.voice = -np.inf
 
     def quiet(self, t: float) -> bool:
         i = int(round(t / self.hop))
         return i < 0 or i >= len(self.db) or self.db[i] < self.thr
+
+    def loud(self, t: float) -> bool:
+        i = int(round(t / self.hop))
+        return 0 <= i < len(self.db) and self.db[i] >= self.voice
 
 
 def silence_intervals(samples: np.ndarray, min_len: float = 0.12,

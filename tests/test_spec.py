@@ -16,6 +16,14 @@ def test_real_script_parses():
     assert "sources" in spec.extra
 
 
+def test_every_script_parses():
+    # an unquoted ": " in a sources line stopped the render: 005 on 30 Oct, 004 on 1 Nov
+    scripts = sorted(SCRIPT.parent.glob("*.md"))
+    assert scripts
+    for path in scripts:
+        assert load_spec(path).slug == path.stem
+
+
 def test_minimal_and_dict_stats():
     spec = parse_spec_text("---\nslug: x\ntitle: T\nstats:\n  - {label: Hits, value: '42%'}\n---\nHello there.\n")
     assert spec.steps == [] and spec.stats[0].value == "42%"

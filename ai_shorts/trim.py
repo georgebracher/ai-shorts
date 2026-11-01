@@ -18,14 +18,15 @@ class Segment:
 def build_segments(words: list[Word], duration: float, pad: float = 0.12,
                    max_pause: float = 0.6, fps: int = 30,
                    silences: list[tuple[float, float]] | None = None,
-                   quiet=None) -> list[Segment]:
+                   quiet=None, loud=None) -> list[Segment]:
     """Kept speech ranges. A new range starts after a dropped word or a pause
     longer than max_pause; each range gets `pad` either side, never reaching
     into a neighbouring (possibly dropped) word. A measured silence longer than
     max_pause inside a range is cut too: whisper sometimes stretches one word
     over a long pause. With `quiet` (audio.Envelope.quiet), an edge that lands
-    on sound moves to the nearest quiet moment. Edges snap to the frame grid so
-    audio and video cut on the same instants."""
+    on sound moves to the nearest quiet moment. With `loud` as well, a start with
+    speech running straight up to it reaches back to that speech. Edges snap to
+    the frame grid so audio and video cut on the same instants."""
     runs: list[list[int]] = []
     for i, w in enumerate(words):
         if not w.kept:
@@ -45,6 +46,8 @@ def build_segments(words: list[Word], duration: float, pad: float = 0.12,
         hi = min(words[b].end + pad, after, duration)
         if quiet:                          # cut in silence, not on the tail of a word
             lo, hi = snap_start(lo, quiet, before), snap_end(hi, quiet, after)
+            if loud and (onset := speech_before(lo, quiet, loud, before)) is not None:
+                lo, words[a].start = max(onset - pad, before), onset
         lo, hi = round(lo * fps) / fps, round(hi * fps) / fps
         if hi - lo < 1 / fps:
             continue
@@ -64,6 +67,7 @@ def build_segments(words: list[Word], duration: float, pad: float = 0.12,
 
 
 SNAP = 0.4      # furthest a cut moves forward/back to land in silence
+REACH = 1.0     # furthest a start reaches back for speech that runs straight up to it
 NUDGE = 0.15    # how far it may step back into a word's own fade instead
 STEP = 0.01
 
@@ -72,6 +76,20 @@ def _on_sound(t: float, quiet, before: bool) -> bool:
     """Is there sound in the 30 ms on the kept side of a cut at t?"""
     ks = range(-3, 1) if before else range(0, 4)
     return any(not quiet(t + k * STEP) for k in ks)
+
+
+def speech_before(t: float, quiet, loud, limit: float) -> float | None:
+    """Where the speech running up to a cut at t began, if any did. Whisper can start a long number
+    late: 005 (1 Nov 2026) put "744" 0.76 s after "seven" began and the cut sat in the dip after
+    it, so the render said "144". Stops at silence, so a breath before the line stays out."""
+    onset, x = None, t
+    while x > max(t - REACH, limit):
+        x -= STEP
+        if quiet(x):
+            break
+        if loud(x):
+            onset = x
+    return onset
 
 
 def snap_end(t: float, quiet, limit: float) -> float:

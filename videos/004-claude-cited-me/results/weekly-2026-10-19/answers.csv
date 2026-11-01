@@ -1,0 +1,35 @@
+question,engine,model,cites_southcoasthouseprices,domains_cited,error
+What is the average house price in Bosham?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk,
+What is the average house price in Bosham?,claude,anthropic/claude-sonnet-5.5,yes,rightmove.co.uk; zoopla.co.uk; southcoasthouseprices.co.uk,
+What is the average house price in Bosham?,perplexity,perplexity/sonar-pro,no,zoopla.co.uk; getagent.co.uk; rightmove.co.uk; homesindex.co.uk,
+What is the average house price in Bosham?,gemini,google/gemini-3.5-flash-lite,no,zoopla.co.uk; rightmove.co.uk; getagent.co.uk; joinhutch.com,
+Are house prices going up or down in Bosham?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk; ons.gov.uk,
+Are house prices going up or down in Bosham?,claude,anthropic/claude-sonnet-5.5,no,housemetric.co.uk; zoopla.co.uk; housesforsaletorent.co.uk,
+Are house prices going up or down in Bosham?,perplexity,perplexity/sonar-pro,no,housemetric.co.uk; propertydata.co.uk; homesindex.co.uk,
+Are house prices going up or down in Bosham?,gemini,google/gemini-3.5-flash-lite,no,getagent.co.uk; housemetric.co.uk; rightmove.co.uk,
+Is Bosham an expensive place to live?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk; check-for-flooding.service.gov.uk,
+Is Bosham an expensive place to live?,claude,anthropic/claude-sonnet-5.5,yes,rightmove.co.uk; zoopla.co.uk; southcoasthouseprices.co.uk; housesforsaletorent.co.uk,
+Is Bosham an expensive place to live?,perplexity,perplexity/sonar-pro,no,liveable.co.uk; sussexlive.co.uk; todanstee.com; countrylife.co.uk; simplynewhomes.com; henryadams.co.uk; sussexexclusive.com; sussexexpress.co.uk,
+Is Bosham an expensive place to live?,gemini,google/gemini-3.5-flash-lite,no,theargus.co.uk; hancockpartners.co.uk; countrylife.co.uk; joinhutch.com; getagent.co.uk,
+Does Bosham flood?,chatgpt,openai/gpt-6-sol,no,thegreatsussexway.org; check-for-flooding.service.gov.uk; gov.uk,
+Does Bosham flood?,claude,anthropic/claude-sonnet-5.5,no,boshamtide.com; tripadvisor.co.uk; sussex.news; sussexexpress.co.uk; floodassist.co.uk,
+Does Bosham flood?,perplexity,perplexity/sonar-pro,no,boshamassociation.org.uk; chichester.gov.uk; check-for-flooding.service.gov.uk; unda.co.uk; theargus.co.uk; floodassist.co.uk,
+Does Bosham flood?,gemini,google/gemini-3.5-flash-lite,no,facebook.com; alamy.com; boshamassociation.org.uk; boshamtide.com; floodassist.co.uk; sussexlive.co.uk; bosham.org; bosham-pc.gov.uk,
+How many houses sell in Bosham each year?,chatgpt,openai/gpt-6-sol,no,bosham.parish.uk,
+How many houses sell in Bosham each year?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; housemetric.co.uk,
+How many houses sell in Bosham each year?,perplexity,perplexity/sonar-pro,no,homesindex.co.uk,
+How many houses sell in Bosham each year?,gemini,google/gemini-3.5-flash-lite,no,housemetric.co.uk,
+What is the average house price in Emsworth?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk,
+What is the average house price in Emsworth?,claude,anthropic/claude-sonnet-5.5,no,rightmove.co.uk; zoopla.co.uk; nethouseprices.com; propertysolvers.co.uk; getagent.co.uk,
+What is the average house price in Emsworth?,perplexity,perplexity/sonar-pro,,,HTTP 402
+What is the average house price in Emsworth?,gemini,google/gemini-3.5-flash-lite,no,rightmove.co.uk; zoopla.co.uk; redfin.com,
+Are house prices going up or down in Emsworth?,chatgpt,openai/gpt-6-sol,,,HTTP 402
+Are house prices going up or down in Emsworth?,claude,anthropic/claude-sonnet-5.5,,,HTTP 402
+Are house prices going up or down in Emsworth?,perplexity,perplexity/sonar-pro,no,propertysolvers.co.uk; rightmove.co.uk; homello.co.uk; housepricefinder.co.uk; housemetric.co.uk,
+Are house prices going up or down in Emsworth?,gemini,google/gemini-3.5-flash-lite,no,rightmove.co.uk; redfin.com,
+Is Emsworth an expensive place to live?,chatgpt,openai/gpt-6-sol,,,HTTP 402
+Is Emsworth an expensive place to live?,claude,anthropic/claude-sonnet-5.5,,,HTTP 402
+Is Emsworth an expensive place to live?,perplexity,perplexity/sonar-pro,,,HTTP 402
+Is Emsworth an expensive place to live?,gemini,google/gemini-3.5-flash-lite,,,HTTP 402
+Does Emsworth flood?,chatgpt,openai/gpt-6-sol,,,HTTP 402
+Does Emsworth flood?,claude,anthropic/claude-sonnet-5.5,,,HTTP 402

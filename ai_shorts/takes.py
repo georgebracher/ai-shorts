@@ -28,7 +28,7 @@ UNIT_PAUSE = 1.0     # seconds of silence that end a unit even without punctuati
 COMPLETE = 0.8       # coverage (vs the best take of a sentence) that counts as complete
 MIN_MATCH = 1.0      # matched weight for a unit to count as a take at all
 MIN_SHARE = 0.35     # share of the unit's own words that must match the script
-LATE = 1e-4          # tie-break per unit index: later takes win ties
+LATE = 1e-4          # tie-break per unit index and sentence covered: later takes win ties
 
 # Filler words: they match cheaply and prove little about which line is being said.
 STOP = set("""a an the and or but of on in to for at with from by as is are was were be been
@@ -249,7 +249,9 @@ def select_takes(words: list[Word], script_words: list[str],
     score: list[float] = []
     prev: list[int | None] = []
     for a, (k, p) in enumerate(nodes):
-        here = credit(p) + LATE * k
+        # per sentence covered: two lines said in one breath would lose the tie to an earlier
+        # take that had a pause between them (005, 1 Nov 2026, "Whole sentences..." + "That's...")
+        here = credit(p) + LATE * k * len(p.cover)
         best, arg = here, None
         for b in range(a):
             k2, p2 = nodes[b]

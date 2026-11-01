@@ -108,3 +108,19 @@ def test_start_moves_back_to_catch_a_word_onset():
     words[0].kept = False
     seg = build_segments(words, 200.0, quiet=quiet_except((179.45, 180.2)))[0]
     assert seg.start == pytest.approx(179.42, abs=0.04)     # sound starts 179.45, not 179.64
+
+
+def test_speech_running_up_to_a_start_is_kept():
+    # 005 (1 Nov 2026): whisper put "744" at 272.16, "seven" began at 271.40 and ran straight up to
+    # it, and the cut sat in the dip after "seven", so the render said "144"
+    words = [Word("744", 272.16, 272.96), Word("tests", 272.96, 273.74)]
+    seg = build_segments(words, 300.0, quiet=quiet_except((271.4, 273.74)), loud=lambda t: 271.45 <= t <= 273.74)[0]
+    assert seg.start < 271.45
+    assert abs(words[0].start - 271.45) < 0.02
+
+
+def test_a_breath_before_a_start_stays_out():
+    words = [Word("Tests", 272.16, 272.96), Word("passed", 272.96, 273.74)]
+    seg = build_segments(words, 300.0, quiet=quiet_except((271.4, 273.74)), loud=lambda t: t >= 272.1)[0]
+    assert seg.start > 272.0
+    assert words[0].start == 272.16

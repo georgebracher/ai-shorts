@@ -114,9 +114,10 @@ def splice(words: list[Word], silences, relisten: Callable[[float, float], list[
         last = b + 1
         # first-pass words the second listen already covers go: 003 (21 Oct 2026) kept a
         # re-heard "flip." running to 42.65 s and the first pass's "flip." at 42.46 s, the
-        # duplicate read as a retake and the cut took "coin flip" with it
+        # duplicate read as a retake and the cut took "coin flip" with it. Covered means a third of
+        # the word: 004 (1 Nov 2026) lost "bot's" to a re-heard "each" that overlapped it by 0.07 s
         if took:
-            while last < len(words) and words[last].start < took[-1].end - 0.05:
+            while last < len(words) and took[-1].end - words[last].start > (words[last].end - words[last].start) / 3:
                 last += 1
     out += words[last:]
     return out, len(spans)

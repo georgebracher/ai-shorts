@@ -33,6 +33,17 @@ def test_a_retake_in_order_replaces_the_earlier_one_silently(capsys):
     assert capsys.readouterr().out == ""
 
 
+def test_a_later_take_of_two_lines_in_one_breath_replaces_an_earlier_take_with_a_pause(capsys):
+    """005, 1 Nov 2026: the last and cleanest "Whole sentences... That's the number I trust" was one
+    unit and lost the tie-break to an earlier take of the same two lines in two units."""
+    C, D = "Seven people read the first issue.", "Nobody wrote back at all."
+    script = f"{C} {D} {A} {B}".split()
+    one_breath = f"{A} {B}".replace(".", "")
+    words, _ = apply_alignment(words_from(f"{C} | {D} | {A} | {B} | {one_breath}"), script)
+    assert kept(words) == f"{C} {D} {one_breath}"
+    assert capsys.readouterr().out == ""
+
+
 def test_the_placement_pass_does_not_warn_twice(capsys):
     """pickups.py reads the main take's selection to place a pickup; only the render's own pass
     reports a dropped take, or a pickup run prints the same drop on two timelines (003, 23 Oct)."""

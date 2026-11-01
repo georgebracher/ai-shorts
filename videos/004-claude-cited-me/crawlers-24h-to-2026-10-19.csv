@@ -1,0 +1,15 @@
+crawler,status,requests
+Googlebot,200,50
+ClaudeBot,200,32
+Google-InspectionTool,200,23
+GPTBot,200,15
+Claude-User,200,7
+Bravebot,200,6
+Googlebot,301,4
+Googlebot,404,3
+bingbot,200,3
+ClaudeBot,301,2
+GPTBot,404,2
+OAI-SearchBot,200,2
+ClaudeBot,404,1
+PerplexityBot,200,1

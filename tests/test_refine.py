@@ -116,3 +116,14 @@ def test_a_broken_off_word_before_a_long_pause_is_heard_as_its_own_island():
              1: [Word("coin", 41.9, 42.2), Word("flip.", 42.2, 42.6)]}
     words, n = splice(first, [(40.4, 41.8)], lambda a, b: alone[0] if b < 41 else alone[1])
     assert [w.text for w in words] == ["It", "was", "a", "coin", "coin", "flip."]
+
+
+def test_a_word_only_grazed_by_the_second_listen_stays():
+    # 004 (1 Nov 2026): the re-heard "each" ran 0.07 s into the first pass's "bot's", which was dropped
+    from ai_shorts.refine import splice
+    from ai_shorts.transcribe import Word
+    first = [Word("Count", 129.04, 129.28), Word("each", 129.28, 133.38), Word("bot's", 133.38, 133.84),
+             Word("visits.", 133.84, 134.28)]
+    again = [Word("Count", 132.82, 133.09), Word("each", 133.09, 133.45), Word("bots", 133.45, 133.77)]
+    words, _ = splice(first, [(129.6, 132.6)], lambda a, b: again if a > 131 else [])
+    assert [w.text for w in words] == ["Count", "each", "bot's", "visits."]

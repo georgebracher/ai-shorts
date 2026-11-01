@@ -172,3 +172,17 @@ def test_sighted_is_cited_but_checked_is_not_check():
                                   "Count who gets cited. That's your baseline.")
     assert _caps("Then I checked it against 336 clips.", "Then I checked it. Three. Check it against.") \
         .startswith("Then I checked it")
+
+
+def test_a_misheard_place_name_takes_the_script_spelling():
+    # whisper heard Bosham as "bosom", 004 (1 Nov 2026)
+    assert "All about Bosham" in _caps("All about bosom and once cited first.",
+                                       "All about Bosham, and once cited first.")
+
+
+def test_a_lost_script_stop_comes_back_only_where_the_next_sentence_starts():
+    # 004 (1 Nov 2026) read "Claude cited it 3 | times ChatGPT,"
+    script = "Claude cited it three times. ChatGPT got zero."
+    assert "times. ChatGPT" in _caps("Claude cited it three times ChatGPT got zero", script)
+    assert _caps("Claude cited it three times and ChatGPT got zero", script).startswith(
+        "Claude cited it three times and")
