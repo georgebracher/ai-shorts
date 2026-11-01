@@ -34,6 +34,23 @@ pick. The examples are rebuilt from his latest grades every run, so every grade 
 day's judging. A frozen copy of the first examples scores the same clips alongside, to show
 whether that rebuild is actually learning anything.
 
+## How it's done since going live
+
+The three in four in the video comes from the test above, on grades he'd already given. What counts is how it does on
+clips it scores before he's seen them. Up to 24 Oct 2026 that's 294 clips (122 kept, 172 binned):
+
+| | AUC |
+|---|---|
+| Claude, examples rebuilt every run | 0.662 |
+| Claude, frozen first examples | 0.700 |
+| Claude, the 57 clips drawn at random (16 kept) | 0.634 |
+| The detector's score | 0.461 |
+
+So about two times out of three, not three out of four. Most of those clips were ones Claude had already picked, which
+makes for a harder test, but the random draw is low too, and with only 16 keeps it's rough. He kept 45% of Claude's picks
+(237 clips) and 28% of the random ones (57). The gap between the rebuilt and frozen examples is small enough to be noise,
+but the rebuild hasn't shown it's learning anything yet.
+
 ## Files
 
 - `prompt.txt`: the prompt. `{examples}` is replaced by the example clips, each as

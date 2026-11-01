@@ -63,7 +63,7 @@ were asked one after another within the ten minutes, four engines at a time.
 A domain counts once per answer if the answer itself references it. ChatGPT, Claude and Gemini
 attach each source to the part of the answer it supports, so all of those count. Gemini's links
 are redirects, resolved to the real page when the answer came in. Perplexity hands back every
-search result it looked at (about 27 an answer) and marks the ones it used with [n] in the text,
+search result it looked at (about 28 an answer) and marks the ones it used with [n] in the text,
 so only the marked ones count.
 
 My first count missed that and counted every Perplexity result, which put Rightmove in 122

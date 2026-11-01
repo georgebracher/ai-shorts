@@ -20,7 +20,7 @@ cap stopped it.
 
 "Cited" means the answer itself references the page. ChatGPT's, Claude's and Gemini's annotations
 each back a piece of the answer, so they all count. Perplexity hands back every search result it
-saw (about 27 an answer) and marks the ones it used with [n] in the text, so only those count.
+saw (about 28 an answer) and marks the ones it used with [n] in the text, so only those count.
 Counting every Perplexity result is how a first reading put Rightmove in 122 of these 200 answers
 instead of 104 (fixed 20 Oct 2026).
 """
