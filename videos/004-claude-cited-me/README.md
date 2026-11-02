@@ -55,7 +55,7 @@ What those numbers don't tell you:
 ## Is that why?
 
 Maybe not. GPTBot read `/bosham/` twice in that window and ChatGPT still didn't cite it. Three answers
-isn't a trend either, least of all from a run that fell over part way. The full re-check runs on
+isn't a trend either, least of all from a run that fell over part way. The full re-check ran on
 2 Nov 2026 and goes in [`../001-aeo-baseline/results/`](../001-aeo-baseline/results/).
 
 ## Files
