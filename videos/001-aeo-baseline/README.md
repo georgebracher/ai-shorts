@@ -98,6 +98,7 @@ Gemini's redirects were resolved when the answers came in and are stored with ea
 ## What happens next
 
 I re-ask the same questions as new pages go up and add each run here as its own folder under
-`results/`. The first full re-check is on 2 Nov 2026, two weeks after the baseline.
-
-Will it work? No idea yet.
+`results/`. The first full re-check ran on 2 Nov 2026, two weeks after the baseline: Rightmove 100,
+my site 71. A bug asked every question four times, so it's four folders,
+`results/recheck-2026-11-02-pass1` to `pass4`. What they say is in
+[006](../006-did-ai-cite-me/).

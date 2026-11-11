@@ -1,0 +1,201 @@
+question,engine,model,cites_southcoasthouseprices,domains_cited
+What is the average house price in Bosham?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk
+What is the average house price in Bosham?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; rightmove.co.uk; zoopla.co.uk
+What is the average house price in Bosham?,gemini,google/gemini-3.5-flash-lite,yes,rightmove.co.uk; joinhutch.com; southcoasthouseprices.co.uk; getagent.co.uk
+What is the average house price in Bosham?,perplexity,perplexity/sonar-pro,yes,zoopla.co.uk; getagent.co.uk; rightmove.co.uk; southcoasthouseprices.co.uk
+Are house prices going up or down in Bosham?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk; ons.gov.uk
+Are house prices going up or down in Bosham?,claude,anthropic/claude-sonnet-5.5,yes,rightmove.co.uk; southcoasthouseprices.co.uk; housemetric.co.uk
+Are house prices going up or down in Bosham?,gemini,google/gemini-3.5-flash-lite,yes,rightmove.co.uk; southcoasthouseprices.co.uk; housemetric.co.uk; getagent.co.uk
+Are house prices going up or down in Bosham?,perplexity,perplexity/sonar-pro,yes,homesindex.co.uk; southcoasthouseprices.co.uk; housemetric.co.uk; mihomes.co.uk; rightmove.co.uk; homemove.com; onthemarket.com; getagent.co.uk
+Is Bosham an expensive place to live?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk
+Is Bosham an expensive place to live?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; rightmove.co.uk; zoopla.co.uk
+Is Bosham an expensive place to live?,gemini,google/gemini-3.5-flash-lite,yes,southcoasthouseprices.co.uk; housepricewatch.com; getagent.co.uk
+Is Bosham an expensive place to live?,perplexity,perplexity/sonar-pro,yes,southcoasthouseprices.co.uk; thatsfamilyfinance.co.uk; sussexlive.co.uk; mansionglobal.com; countrylife.co.uk; sussexexclusive.com; dwh.co.uk; housemetric.co.uk
+Does Bosham flood?,chatgpt,openai/gpt-6-sol,no,boshamassociation.org.uk; check-for-flooding.service.gov.uk
+Does Bosham flood?,claude,anthropic/claude-sonnet-5.5,no,boshamtide.com; floodassist.co.uk; aol.com; check-for-flooding.service.gov.uk
+Does Bosham flood?,gemini,google/gemini-3.5-flash-lite,yes,southcoasthouseprices.co.uk; bosham.org; boshamtide.com; boshamassociation.org.uk; sussexexpress.co.uk; floodradar.co.uk; bosham-pc.gov.uk
+Does Bosham flood?,perplexity,perplexity/sonar-pro,no,check-for-flooding.service.gov.uk; bbc.com; theargus.co.uk; hellorayo.co.uk; floodradar.co.uk; bosham.org
+How many houses sell in Bosham each year?,chatgpt,openai/gpt-6-sol,yes,southcoasthouseprices.co.uk
+How many houses sell in Bosham each year?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; housesforsaletorent.co.uk; propertymarketintel.com; housepricewatch.com
+How many houses sell in Bosham each year?,gemini,google/gemini-3.5-flash-lite,yes,southcoasthouseprices.co.uk; hancockpartners.co.uk
+How many houses sell in Bosham each year?,perplexity,perplexity/sonar-pro,yes,southcoasthouseprices.co.uk
+What is the average house price in Chidham and Hambrook?,chatgpt,openai/gpt-6-sol,yes,chidham-and-hambrook.parish.uk; southcoasthouseprices.co.uk
+What is the average house price in Chidham and Hambrook?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; homemove.com
+What is the average house price in Chidham and Hambrook?,gemini,google/gemini-3.5-flash-lite,yes,southcoasthouseprices.co.uk; rightmove.co.uk
+What is the average house price in Chidham and Hambrook?,perplexity,perplexity/sonar-pro,no,housepricewatch.com; rightmove.co.uk
+Are house prices going up or down in Chidham and Hambrook?,chatgpt,openai/gpt-6-sol,yes,ons.gov.uk; southcoasthouseprices.co.uk
+Are house prices going up or down in Chidham and Hambrook?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; rightmove.co.uk; homemove.com
+Are house prices going up or down in Chidham and Hambrook?,gemini,google/gemini-3.5-flash-lite,yes,southcoasthouseprices.co.uk; rightmove.co.uk
+Are house prices going up or down in Chidham and Hambrook?,perplexity,perplexity/sonar-pro,no,rightmove.co.uk; housepricewatch.com; housesforsaletorent.co.uk
+Is Chidham and Hambrook an expensive place to live?,chatgpt,openai/gpt-6-sol,yes,southcoasthouseprices.co.uk; ons.gov.uk
+Is Chidham and Hambrook an expensive place to live?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; homemove.com
+Is Chidham and Hambrook an expensive place to live?,gemini,google/gemini-3.5-flash-lite,yes,rightmove.co.uk; propaideals.co.uk; southcoasthouseprices.co.uk
+Is Chidham and Hambrook an expensive place to live?,perplexity,perplexity/sonar-pro,no,chichester.oc2.uk; rightmove.co.uk
+Does Chidham and Hambrook flood?,chatgpt,openai/gpt-6-sol,no,check-for-flooding.service.gov.uk; gov.uk
+Does Chidham and Hambrook flood?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; chidhamandhambrook-pc.gov.uk
+Does Chidham and Hambrook flood?,gemini,google/gemini-3.5-flash-lite,yes,chidhamandhambrook-pc.gov.uk; southcoasthouseprices.co.uk; youtube.com
+Does Chidham and Hambrook flood?,perplexity,perplexity/sonar-pro,yes,southcoasthouseprices.co.uk; chichester.gov.uk; bbc.co.uk; check-for-flooding.service.gov.uk
+How many houses sell in Chidham and Hambrook each year?,chatgpt,openai/gpt-6-sol,yes,southcoasthouseprices.co.uk
+How many houses sell in Chidham and Hambrook each year?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk
+How many houses sell in Chidham and Hambrook each year?,gemini,google/gemini-3.5-flash-lite,yes,southcoasthouseprices.co.uk
+How many houses sell in Chidham and Hambrook each year?,perplexity,perplexity/sonar-pro,no,housepricewatch.com; rightmove.co.uk
+What is the average house price in Fishbourne?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk
+What is the average house price in Fishbourne?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; liveable.co.uk; zoopla.co.uk; rightmove.co.uk; countypress.co.uk
+What is the average house price in Fishbourne?,gemini,google/gemini-3.5-flash-lite,yes,zoopla.co.uk; rightmove.co.uk; southcoasthouseprices.co.uk; housesforsaletorent.co.uk
+What is the average house price in Fishbourne?,perplexity,perplexity/sonar-pro,no,rightmove.co.uk; propertysolvers.co.uk; onthemarket.com; liveable.co.uk; hampshirelive.news
+Are house prices going up or down in Fishbourne?,chatgpt,openai/gpt-6-sol,no,ons.gov.uk
+Are house prices going up or down in Fishbourne?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; rightmove.co.uk; propertysolvers.co.uk
+Are house prices going up or down in Fishbourne?,gemini,google/gemini-3.5-flash-lite,yes,google.com; rightmove.co.uk; onthemarket.com; southcoasthouseprices.co.uk; cpaproperty.co.uk
+Are house prices going up or down in Fishbourne?,perplexity,perplexity/sonar-pro,no,homesindex.co.uk; rightmove.co.uk; propertysolvers.co.uk; onthemarket.com
+Is Fishbourne an expensive place to live?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk; ons.gov.uk
+Is Fishbourne an expensive place to live?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; rightmove.co.uk; zoopla.co.uk
+Is Fishbourne an expensive place to live?,gemini,google/gemini-3.5-flash-lite,yes,southcoasthouseprices.co.uk; rightmove.co.uk; countypress.co.uk; isleofwightguru.co.uk
+Is Fishbourne an expensive place to live?,perplexity,perplexity/sonar-pro,no,homemove.com; countypress.co.uk; homesindex.co.uk; liveable.co.uk; rightmove.co.uk; hampshirelive.news; iow.gov.uk; henryadams.co.uk
+Does Fishbourne flood?,chatgpt,openai/gpt-6-sol,no,fishbourne-pc.gov.uk; iow.gov.uk; gov.uk
+Does Fishbourne flood?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; sussexexpress.co.uk; fishbourne-pc.gov.uk
+Does Fishbourne flood?,gemini,google/gemini-3.5-flash-lite,yes,unda.co.uk; southcoasthouseprices.co.uk; check-for-flooding.service.gov.uk
+Does Fishbourne flood?,perplexity,perplexity/sonar-pro,no,chichester.gov.uk; check-for-flooding.service.gov.uk; bbc.com; directory.liverpoolecho.co.uk
+How many houses sell in Fishbourne each year?,chatgpt,openai/gpt-6-sol,yes,southcoasthouseprices.co.uk; fishbourne1.parish.uk
+How many houses sell in Fishbourne each year?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; propertymarketintel.com
+How many houses sell in Fishbourne each year?,gemini,google/gemini-3.5-flash-lite,yes,southcoasthouseprices.co.uk; mihomes.co.uk
+How many houses sell in Fishbourne each year?,perplexity,perplexity/sonar-pro,no,homesindex.co.uk; homemove.com
+What is the average house price in Southbourne?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk
+What is the average house price in Southbourne?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; rightmove.co.uk; zoopla.co.uk; bournemouthpost.co.uk
+What is the average house price in Southbourne?,gemini,google/gemini-3.5-flash-lite,no,lovettinternational.com; zoopla.co.uk; rightmove.co.uk
+What is the average house price in Southbourne?,perplexity,perplexity/sonar-pro,no,rightmove.co.uk; zoopla.co.uk; useperch.co.uk
+Are house prices going up or down in Southbourne?,chatgpt,openai/gpt-6-sol,yes,rightmove.co.uk; southcoasthouseprices.co.uk
+Are house prices going up or down in Southbourne?,claude,anthropic/claude-sonnet-5.5,yes,rightmove.co.uk; southcoasthouseprices.co.uk; zoopla.co.uk; propertysolvers.co.uk
+Are house prices going up or down in Southbourne?,gemini,google/gemini-3.5-flash-lite,no,homesindex.co.uk; lovettinternational.com; rightmove.co.uk; robertsproperty.co.uk
+Are house prices going up or down in Southbourne?,perplexity,perplexity/sonar-pro,no,propertyresearch.uk; logicaproperties.co.uk; onthemarket.com; rightmove.co.uk; useperch.co.uk
+Is Southbourne an expensive place to live?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk
+Is Southbourne an expensive place to live?,claude,anthropic/claude-sonnet-5.5,no,robertsproperty.co.uk; bournemouthpost.co.uk; rightmove.co.uk; zoopla.co.uk; ons.gov.uk; athertonsestateagents.com; numbeo.com
+Is Southbourne an expensive place to live?,gemini,google/gemini-3.5-flash-lite,no,athertonsestateagents.com; themoveteam.co.uk; lovettinternational.com; google.com; liveable.co.uk; dorsetsomerset.muddystilettos.co.uk; getagent.co.uk; homesindex.co.uk
+Is Southbourne an expensive place to live?,perplexity,perplexity/sonar-pro,no,athertonsestateagents.com; liveable.co.uk; rightmove.co.uk; maidmans.com; bricksandlogic.co.uk; martinco.com; bournemouthecho.co.uk; rentercheck.co.uk; greatbritishlife.co.uk
+Does Southbourne flood?,chatgpt,openai/gpt-6-sol,no,southbourne-pc.gov.uk; bcpcouncil.gov.uk; gov.uk
+Does Southbourne flood?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk
+Does Southbourne flood?,gemini,google/gemini-3.5-flash-lite,yes,southcoasthouseprices.co.uk; floodassist.co.uk; check-for-flooding.service.gov.uk; swfloodandcoastal.org.uk
+Does Southbourne flood?,perplexity,perplexity/sonar-pro,no,check-for-flooding.service.gov.uk; chichester.gov.uk; floodassist.co.uk; riverlevels.uk; floodradar.co.uk; getthedata.com
+How many houses sell in Southbourne each year?,chatgpt,openai/gpt-6-sol,yes,useperch.co.uk; southcoasthouseprices.co.uk
+How many houses sell in Southbourne each year?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; propertymarketintel.com
+How many houses sell in Southbourne each year?,gemini,google/gemini-3.5-flash-lite,yes,southcoasthouseprices.co.uk; homesindex.co.uk; lovettinternational.com
+How many houses sell in Southbourne each year?,perplexity,perplexity/sonar-pro,no,useperch.co.uk; logicaproperties.co.uk
+What is the average house price in Westbourne?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk
+What is the average house price in Westbourne?,claude,anthropic/claude-sonnet-5.5,yes,rightmove.co.uk; zoopla.co.uk; onthemarket.com; housepricedashboard.co.uk; southcoasthouseprices.co.uk
+What is the average house price in Westbourne?,gemini,google/gemini-3.5-flash-lite,no,rightmove.co.uk; zoopla.co.uk; housesforsaletorent.co.uk; realtor.com; zillow.com
+What is the average house price in Westbourne?,perplexity,perplexity/sonar-pro,no,getagent.co.uk; zoopla.co.uk; rightmove.co.uk
+Are house prices going up or down in Westbourne?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk
+Are house prices going up or down in Westbourne?,claude,anthropic/claude-sonnet-5.5,yes,onthemarket.com; housepricedashboard.co.uk; southcoasthouseprices.co.uk
+Are house prices going up or down in Westbourne?,gemini,google/gemini-3.5-flash-lite,yes,lovettinternational.com; rightmove.co.uk; southcoasthouseprices.co.uk
+Are house prices going up or down in Westbourne?,perplexity,perplexity/sonar-pro,no,rightmove.co.uk; getagent.co.uk
+Is Westbourne an expensive place to live?,chatgpt,openai/gpt-6-sol,yes,southcoasthouseprices.co.uk; useperch.co.uk; londonhouseprices.co.uk
+Is Westbourne an expensive place to live?,claude,anthropic/claude-sonnet-5.5,no,rightmove.co.uk; bournemouthpost.co.uk; robertsproperty.co.uk; housesforsaletorent.co.uk
+Is Westbourne an expensive place to live?,gemini,google/gemini-3.5-flash-lite,no,lovettinternational.com; har.com; liveable.co.uk; rightmove.co.uk
+Is Westbourne an expensive place to live?,perplexity,perplexity/sonar-pro,no,whereareyoubased.com; westminster.gov.uk; dorset.live; grantco.co.uk
+Does Westbourne flood?,chatgpt,openai/gpt-6-sol,no,check-for-flooding.service.gov.uk; environment.data.gov.uk
+Does Westbourne flood?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; floodassist.co.uk; riverlevels.uk
+Does Westbourne flood?,gemini,google/gemini-3.5-flash-lite,yes,southcoasthouseprices.co.uk; check-for-flooding.service.gov.uk; floodassist.co.uk
+Does Westbourne flood?,perplexity,perplexity/sonar-pro,no,check-for-flooding.service.gov.uk; floodassist.co.uk
+How many houses sell in Westbourne each year?,chatgpt,openai/gpt-6-sol,yes,southcoasthouseprices.co.uk; useperch.co.uk
+How many houses sell in Westbourne each year?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; housepricedashboard.co.uk; propertymarketintel.com; yourinvestmentpropertymag.com.au
+How many houses sell in Westbourne each year?,gemini,google/gemini-3.5-flash-lite,no,lovettinternational.com; rightmove.co.uk; realtor.com
+How many houses sell in Westbourne each year?,perplexity,perplexity/sonar-pro,no,brighton-hove.gov.uk; housemetric.co.uk
+What is the average house price in Emsworth?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk
+What is the average house price in Emsworth?,claude,anthropic/claude-sonnet-5.5,no,rightmove.co.uk; nethouseprices.com; propertysolvers.co.uk; zillow.com; redfin.com
+What is the average house price in Emsworth?,gemini,google/gemini-3.5-flash-lite,no,onthemarket.com; rightmove.co.uk; zillow.com; exprealty.com
+What is the average house price in Emsworth?,perplexity,perplexity/sonar-pro,no,rightmove.co.uk; getagent.co.uk; housepricefinder.co.uk; liveable.co.uk
+Are house prices going up or down in Emsworth?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk; zillow.com
+Are house prices going up or down in Emsworth?,claude,anthropic/claude-sonnet-5.5,no,rightmove.co.uk; nethouseprices.com; redfin.com; homes.com; movoto.com
+Are house prices going up or down in Emsworth?,gemini,google/gemini-3.5-flash-lite,no,housemetric.co.uk; rightmove.co.uk; redfin.com; zillow.com
+Are house prices going up or down in Emsworth?,perplexity,perplexity/sonar-pro,no,getagent.co.uk; housemetric.co.uk; offrly.co.uk; housepricefinder.co.uk; propertysolvers.co.uk; rightmove.co.uk
+Is Emsworth an expensive place to live?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk; redfin.com
+Is Emsworth an expensive place to live?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; rightmove.co.uk; getagent.co.uk
+Is Emsworth an expensive place to live?,gemini,google/gemini-3.5-flash-lite,yes,hancockpartners.co.uk; southcoasthouseprices.co.uk; rightmove.co.uk
+Is Emsworth an expensive place to live?,perplexity,perplexity/sonar-pro,no,payscale.com; areavibes.com; apartments.com; niche.com; redfin.com
+Does Emsworth flood?,chatgpt,openai/gpt-6-sol,no,havant.gov.uk; gov.uk
+Does Emsworth flood?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; floodassist.co.uk
+Does Emsworth flood?,gemini,google/gemini-3.5-flash-lite,no,havant.gov.uk; floodassist.co.uk; smppa.org.uk; check-for-flooding.service.gov.uk
+Does Emsworth flood?,perplexity,perplexity/sonar-pro,no,rainviewer.com; check-for-flooding.service.gov.uk; floodassist.co.uk; havant.gov.uk
+How many houses sell in Emsworth each year?,chatgpt,openai/gpt-6-sol,yes,southcoasthouseprices.co.uk; ezhomesearch.com
+How many houses sell in Emsworth each year?,claude,anthropic/claude-sonnet-5.5,no,propertysolvers.co.uk; homes.com; redfin.com
+How many houses sell in Emsworth each year?,gemini,google/gemini-3.5-flash-lite,no,google.com; domovita.co.uk
+How many houses sell in Emsworth each year?,perplexity,perplexity/sonar-pro,no,propertysolvers.co.uk; housepricefinder.co.uk
+What is the average house price in West Thorney?,chatgpt,openai/gpt-6-sol,no,postcodesuk.com; housesforsaletorent.co.uk
+What is the average house price in West Thorney?,claude,anthropic/claude-sonnet-5.5,no,rightmove.co.uk
+What is the average house price in West Thorney?,gemini,google/gemini-3.5-flash-lite,no,west-thorney.parish.uk; postcodescorer.co.uk; rightmove.co.uk; zoopla.co.uk
+What is the average house price in West Thorney?,perplexity,perplexity/sonar-pro,no,rightmove.co.uk; joinhutch.com
+Are house prices going up or down in West Thorney?,chatgpt,openai/gpt-6-sol,no,housesforsaletorent.co.uk; ons.gov.uk
+Are house prices going up or down in West Thorney?,claude,anthropic/claude-sonnet-5.5,no,rightmove.co.uk
+Are house prices going up or down in West Thorney?,gemini,google/gemini-3.5-flash-lite,no,rightmove.co.uk
+Are house prices going up or down in West Thorney?,perplexity,perplexity/sonar-pro,no,rightmove.co.uk; joinhutch.com
+Is West Thorney an expensive place to live?,chatgpt,openai/gpt-6-sol,no,jsna.westsussex.gov.uk; ons.gov.uk
+Is West Thorney an expensive place to live?,claude,anthropic/claude-sonnet-5.5,no,rightmove.co.uk; search.savills.com; housesforsaletorent.co.uk
+Is West Thorney an expensive place to live?,gemini,google/gemini-3.5-flash-lite,no,getagent.co.uk; rightmove.co.uk
+Is West Thorney an expensive place to live?,perplexity,perplexity/sonar-pro,no,rightmove.co.uk; joinhutch.com
+Does West Thorney flood?,chatgpt,openai/gpt-6-sol,no,loxwood-pc.gov.uk; gov.uk
+Does West Thorney flood?,claude,anthropic/claude-sonnet-5.5,no,check-for-flooding.service.gov.uk; riverlevels.uk
+Does West Thorney flood?,gemini,google/gemini-3.5-flash-lite,no,emsworthonline.co.uk; check-for-flooding.service.gov.uk; floodassist.co.uk; merlinengineering.co.uk; gov.uk
+Does West Thorney flood?,perplexity,perplexity/sonar-pro,no,check-for-flooding.service.gov.uk; floodassist.co.uk; riverlevels.uk
+How many houses sell in West Thorney each year?,chatgpt,openai/gpt-6-sol,no,jsna.westsussex.gov.uk; housesforsaletorent.co.uk
+How many houses sell in West Thorney each year?,claude,anthropic/claude-sonnet-5.5,no,rightmove.co.uk
+How many houses sell in West Thorney each year?,gemini,google/gemini-3.5-flash-lite,no,west-thorney.parish.uk; postcodescorer.co.uk
+How many houses sell in West Thorney each year?,perplexity,perplexity/sonar-pro,no,rightmove.co.uk; premarket.getagent.co.uk; en.wikipedia.org; onthemarket.com
+What is the average house price in Funtington?,chatgpt,openai/gpt-6-sol,no,funtington.parish.uk
+What is the average house price in Funtington?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; rightmove.co.uk; nethouseprices.com
+What is the average house price in Funtington?,gemini,google/gemini-3.5-flash-lite,yes,rightmove.co.uk; southcoasthouseprices.co.uk; getagent.co.uk
+What is the average house price in Funtington?,perplexity,perplexity/sonar-pro,no,getagent.co.uk; onthemarket.com; housesforsaletorent.co.uk; housemetric.co.uk
+Are house prices going up or down in Funtington?,chatgpt,openai/gpt-6-sol,yes,ons.gov.uk; southcoasthouseprices.co.uk
+Are house prices going up or down in Funtington?,claude,anthropic/claude-sonnet-5.5,yes,rightmove.co.uk; southcoasthouseprices.co.uk; housesforsaletorent.co.uk
+Are house prices going up or down in Funtington?,gemini,google/gemini-3.5-flash-lite,yes,southcoasthouseprices.co.uk; rightmove.co.uk
+Are house prices going up or down in Funtington?,perplexity,perplexity/sonar-pro,no,getagent.co.uk; onthemarket.com; housemetric.co.uk
+Is Funtington an expensive place to live?,chatgpt,openai/gpt-6-sol,yes,southcoasthouseprices.co.uk; ons.gov.uk
+Is Funtington an expensive place to live?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; rightmove.co.uk; housesforsaletorent.co.uk; nethouseprices.com
+Is Funtington an expensive place to live?,gemini,google/gemini-3.5-flash-lite,yes,google.com; rightmove.co.uk; streetgrader.com; southcoasthouseprices.co.uk
+Is Funtington an expensive place to live?,perplexity,perplexity/sonar-pro,no,getagent.co.uk; struttandparker.com; rightmove.co.uk; search.savills.com; explore.ofsted.gov.uk
+Does Funtington flood?,chatgpt,openai/gpt-6-sol,no,westsussex.gov.uk; environment.data.gov.uk
+Does Funtington flood?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; funtington-pc.gov.uk; sussexexpress.co.uk; v2radio.co.uk
+Does Funtington flood?,gemini,google/gemini-3.5-flash-lite,yes,google.com; southcoasthouseprices.co.uk; funtington-pc.gov.uk
+Does Funtington flood?,perplexity,perplexity/sonar-pro,yes,southcoasthouseprices.co.uk; southernwater.co.uk; funtington-pc.gov.uk
+How many houses sell in Funtington each year?,chatgpt,openai/gpt-6-sol,yes,southcoasthouseprices.co.uk
+How many houses sell in Funtington each year?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; housesforsaletorent.co.uk
+How many houses sell in Funtington each year?,gemini,google/gemini-3.5-flash-lite,yes,southcoasthouseprices.co.uk
+How many houses sell in Funtington each year?,perplexity,perplexity/sonar-pro,no,housemetric.co.uk
+What is the average house price in Apuldram?,chatgpt,openai/gpt-6-sol,no,rightmove.co.uk
+What is the average house price in Apuldram?,claude,anthropic/claude-sonnet-5.5,no,rightmove.co.uk; themovemarket.com
+What is the average house price in Apuldram?,gemini,google/gemini-3.5-flash-lite,no,rightmove.co.uk; getagent.co.uk; postcodesuk.com; zoopla.co.uk
+What is the average house price in Apuldram?,perplexity,perplexity/sonar-pro,no,liveable.co.uk; rightmove.co.uk
+Are house prices going up or down in Apuldram?,chatgpt,openai/gpt-6-sol,no,ons.gov.uk; rightmove.co.uk
+Are house prices going up or down in Apuldram?,claude,anthropic/claude-sonnet-5.5,no,rightmove.co.uk; themovemarket.com
+Are house prices going up or down in Apuldram?,gemini,google/gemini-3.5-flash-lite,yes,rightmove.co.uk; southcoasthouseprices.co.uk; ons.gov.uk; builtplace.com; countrylife.co.uk; mylondon.news
+Are house prices going up or down in Apuldram?,perplexity,perplexity/sonar-pro,no,rightmove.co.uk; liveable.co.uk
+Is Apuldram an expensive place to live?,chatgpt,openai/gpt-6-sol,no,apuldramparish.gov.uk; ons.gov.uk
+Is Apuldram an expensive place to live?,claude,anthropic/claude-sonnet-5.5,no,rightmove.co.uk; homipi.co.uk; themovemarket.com
+Is Apuldram an expensive place to live?,gemini,google/gemini-3.5-flash-lite,no,rightmove.co.uk; zoopla.co.uk; michaelcornish.co.uk; onthemarket.com
+Is Apuldram an expensive place to live?,perplexity,perplexity/sonar-pro,no,liveable.co.uk; rightmove.co.uk; homecareprices.co.uk
+Does Apuldram flood?,chatgpt,openai/gpt-6-sol,no,chichester.gov.uk; gov.uk
+Does Apuldram flood?,claude,anthropic/claude-sonnet-5.5,no,en.wikipedia.org; westsussex.moderngov.co.uk; apuldramparish.gov.uk; bigreddirectory.com; environment.data.gov.uk; unda.co.uk
+Does Apuldram flood?,gemini,google/gemini-3.5-flash-lite,no,sussexexpress.co.uk; environment.data.gov.uk; unda.co.uk; theargus.co.uk; en.wikipedia.org; westsussex.gov.uk; apuldramparish.gov.uk
+Does Apuldram flood?,perplexity,perplexity/sonar-pro,no,unda.co.uk; chichester.gov.uk; en.wikipedia.org; bahs.org.uk; docs.planning.org.uk; chichester.moderngov.co.uk
+How many houses sell in Apuldram each year?,chatgpt,openai/gpt-6-sol,no,appledram.parish.uk
+How many houses sell in Apuldram each year?,claude,anthropic/claude-sonnet-5.5,no,rightmove.co.uk; themovemarket.com; propertychecker.co.uk
+How many houses sell in Apuldram each year?,gemini,google/gemini-3.5-flash-lite,no,
+How many houses sell in Apuldram each year?,perplexity,perplexity/sonar-pro,no,rightmove.co.uk; liveable.co.uk; zoopla.co.uk
+What is the average house price in Chichester?,chatgpt,openai/gpt-6-sol,no,ons.gov.uk; rightmove.co.uk
+What is the average house price in Chichester?,claude,anthropic/claude-sonnet-5.5,yes,chichesterlive.co.uk; ons.gov.uk; rightmove.co.uk; southcoasthouseprices.co.uk; getagent.co.uk
+What is the average house price in Chichester?,gemini,google/gemini-3.5-flash-lite,no,rightmove.co.uk; ons.gov.uk; constructioncapital.co.uk; propertyinvestmentsuk.co.uk; propertysearchesdirect.co.uk
+What is the average house price in Chichester?,perplexity,perplexity/sonar-pro,no,ons.gov.uk; chichester.oc2.uk; rightmove.co.uk
+Are house prices going up or down in Chichester?,chatgpt,openai/gpt-6-sol,no,ons.gov.uk; rightmove.co.uk
+Are house prices going up or down in Chichester?,claude,anthropic/claude-sonnet-5.5,yes,chichesterlive.co.uk; ons.gov.uk; southcoasthouseprices.co.uk; getagent.co.uk; constructioncapital.co.uk
+Are house prices going up or down in Chichester?,gemini,google/gemini-3.5-flash-lite,yes,ons.gov.uk; southcoasthouseprices.co.uk; housemetric.co.uk
+Are house prices going up or down in Chichester?,perplexity,perplexity/sonar-pro,no,ons.gov.uk; getagent.co.uk; bellsoph.co.uk; sussexexpress.co.uk
+Is Chichester an expensive place to live?,chatgpt,openai/gpt-6-sol,no,ons.gov.uk
+Is Chichester an expensive place to live?,claude,anthropic/claude-sonnet-5.5,no,ons.gov.uk; wolves-removals.co.uk; chichesterliving.com; wise.com; livingcost.org
+Is Chichester an expensive place to live?,gemini,google/gemini-3.5-flash-lite,no,wolves-removals.co.uk; sussexexpress.co.uk; theguardian.com; livewhere.co.uk; ons.gov.uk
+Is Chichester an expensive place to live?,perplexity,perplexity/sonar-pro,no,ons.gov.uk; wolves-removals.co.uk; chichester.gov.uk; wise.com; expatica.com; sussexexpress.co.uk
+Does Chichester flood?,chatgpt,openai/gpt-6-sol,no,nora.nerc.ac.uk; gov.uk
+Does Chichester flood?,claude,anthropic/claude-sonnet-5.5,yes,southcoasthouseprices.co.uk; chichester.gov.uk; check-for-flooding.service.gov.uk; yourvoice.westsussex.gov.uk; sussexexpress.co.uk
+Does Chichester flood?,gemini,google/gemini-3.5-flash-lite,no,unda.co.uk; sussexexpress.co.uk; check-for-flooding.service.gov.uk; floodassist.co.uk
+Does Chichester flood?,perplexity,perplexity/sonar-pro,no,chichester.gov.uk; check-for-flooding.service.gov.uk; gov.uk; unda.co.uk
+How many houses sell in Chichester each year?,chatgpt,openai/gpt-6-sol,yes,southcoasthouseprices.co.uk; openindex.co.uk
+How many houses sell in Chichester each year?,claude,anthropic/claude-sonnet-5.5,yes,homenicom.co.uk; constructioncapital.co.uk; southcoasthouseprices.co.uk; housepricedashboard.co.uk
+How many houses sell in Chichester each year?,gemini,google/gemini-3.5-flash-lite,no,builtplace.com; constructioncapital.co.uk; google.com; housepricedashboard.co.uk
+How many houses sell in Chichester each year?,perplexity,perplexity/sonar-pro,no,propertysolvers.co.uk; builtplace.com; chichester.gov.uk
