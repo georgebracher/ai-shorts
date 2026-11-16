@@ -14,7 +14,9 @@ CURRENCY = {"$": "dollars", "£": "pounds", "€": "euros"}
 # Whisper's spellings of what this series says most: 004 (1 Nov 2026), "See who sights you" in his
 # last clean take read as a worse take than an earlier "See who cites you".
 SAME_SOUND = {"sight": "site", "cite": "site", "sights": "sites", "cites": "sites",
-              "sighted": "cited", "sited": "cited"}
+              "sighted": "cited", "sited": "cited",
+              # 009 (16 Nov 2026): "numbers, not passed" heard and captioned as "not past"
+              "past": "passed"}
 
 
 def number_words(n: int) -> list[str]:

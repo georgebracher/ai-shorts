@@ -174,6 +174,13 @@ def test_sighted_is_cited_but_checked_is_not_check():
         .startswith("Then I checked it")
 
 
+def test_past_and_passed_take_the_script_spelling_either_way():
+    # 009 (16 Nov 2026): whisper heard "not passed" as "not past"
+    assert "not passed." in _caps("Make it give you numbers, not past.",
+                                  'Make it give you numbers, not "passed".')
+    assert "in the past." in _caps("It was all in the past.", "It was all in the past.")
+
+
 def test_a_misheard_place_name_takes_the_script_spelling():
     # whisper heard Bosham as "bosom", 004 (1 Nov 2026)
     assert "All about Bosham" in _caps("All about bosom and once cited first.",
