@@ -5,8 +5,9 @@ manual editing. You read the script to camera; the pipeline does the rest.
 
 It edits my videos on TikTok and Instagram ([@georgebracher.ai](https://www.tiktok.com/@georgebracher.ai)).
 `videos/` holds what each one promises: the questions, code and every answer behind 001, the clip
-judging prompt behind 003, the answers and crawler counts behind 004, and where 005's numbers live
-in the Quilltouched repo.
+judging prompt behind 003, the answers and crawler counts behind 004, where 005's numbers live in
+the Quilltouched repo, the two-week re-check behind 006, where 007's courses run, the browser tests
+that broke them in 008, and 009's ticket. 002's code is this repo.
 
 ## What it does
 
